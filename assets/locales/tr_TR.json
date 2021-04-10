@@ -1,0 +1,10 @@
+{
+    "buttons": {
+      "login": "Giriş",
+      "sign_in": "Kayıt",
+      "logout": "Çıkış",
+      "sign_in_fb": "Facebook ile giriş",
+      "sign_in_google": "Google ile giriş",
+      "sign_in_apple": "Apple ile giriş"
+    }
+  }
