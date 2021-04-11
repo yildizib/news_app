@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  final _onTapSelectedIndex = 0.obs;
+  get onTapSelectedIndex => _onTapSelectedIndex.value;
+  set onTapSelectedIndex(index) => _onTapSelectedIndex.value = index;
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -16,5 +17,4 @@ class HomeController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
 }

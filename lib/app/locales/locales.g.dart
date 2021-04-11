@@ -16,6 +16,7 @@ class LocaleKeys {
   static const buttons_sign_in_fb = 'buttons_sign_in_fb';
   static const buttons_sign_in_google = 'buttons_sign_in_google';
   static const buttons_sign_in_apple = 'buttons_sign_in_apple';
+  static const home_app_bar_title = 'home_app_bar_title';
 }
 
 class Locales {
@@ -26,6 +27,7 @@ class Locales {
     'buttons_sign_in_fb': 'Facebook ile giriş',
     'buttons_sign_in_google': 'Google ile giriş',
     'buttons_sign_in_apple': 'Apple ile giriş',
+    'home_app_bar_title': 'Haberler',
   };
   static const en_US = {
     'buttons_login': 'Login',
@@ -34,5 +36,6 @@ class Locales {
     'buttons_sign_in_fb': 'Sign-in with Facebook',
     'buttons_sign_in_google': 'Sign-in with Google',
     'buttons_sign_in_apple': 'Sign-in with Apple',
+    'home_app_bar_title': 'News',
   };
 }

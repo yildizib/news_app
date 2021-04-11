@@ -6,5 +6,10 @@
       "sign_in_fb": "Sign-in with Facebook",
       "sign_in_google": "Sign-in with Google",
       "sign_in_apple": "Sign-in with Apple"
+    },
+    "home":{
+      "app_bar":{
+        "title": "News"
+      }
     }
   }
