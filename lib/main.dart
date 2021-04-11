@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:news_app/app/bindings/initial_binding.dart';
 import 'package:news_app/app/locales/locales.g.dart';
@@ -18,6 +18,11 @@ void main() {
       fallbackLocale: Locale('tr', 'TR'),
       supportedLocales: [Locale('tr', 'TR'), Locale('en', 'US')],
       initialBinding: InitialBinding(),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
     ),
   );
 }

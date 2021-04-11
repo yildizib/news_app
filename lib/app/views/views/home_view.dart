@@ -22,7 +22,17 @@ class HomeView extends GetView<HomeController> {
             IconButton(
                 icon: Icon(Icons.ac_unit),
                 onPressed: () {
-                  Get.updateLocale(Locale('en', 'US'));
+                  var locale = Get.locale;
+                  if (locale.toLanguageTag() ==
+                      Locale('tr', 'TR').toLanguageTag()) {
+                    Get.updateLocale(Locale('en', 'US'));
+                  }
+
+                  if (locale.toLanguageTag() == Locale('en').toLanguageTag() ||
+                      locale.toLanguageTag() ==
+                          Locale('en', 'US').toLanguageTag()) {
+                    Get.updateLocale(Locale('tr', 'TR'));
+                  }
                 })
           ],
         ),
