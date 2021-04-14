@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:news_app/app/bindings/initial_binding.dart';
+import 'package:news_app/app/configs/theme.dart';
 import 'package:news_app/app/locales/locales.g.dart';
 
 import 'app/routes/app_pages.dart';
@@ -9,6 +10,9 @@ import 'app/routes/app_pages.dart';
 void main() {
   runApp(
     GetMaterialApp(
+      theme: AppTheme.lightThemeDate,
+      darkTheme: AppTheme.darkThemeDate,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       title: "Application",
       initialRoute: AppPages.INITIAL,
