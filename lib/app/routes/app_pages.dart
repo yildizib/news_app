@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:news_app/app/bindings/home_binding.dart';
-import 'package:news_app/app/views/views/home_view.dart';
+import 'package:news_app/app/views/home/home_view.dart';
 
 part 'app_routes.dart';
 
