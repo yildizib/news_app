@@ -7,7 +7,7 @@ class CategoryProvider extends GetConnect {
   @override
   void onInit() {
     httpClient.defaultDecoder = (map) => Category.fromJson(map);
-    httpClient.baseUrl = ProviderConfig.apiUrl + '/category';
+    httpClient.baseUrl = ProviderConfig.apiUrl;
   }
 
   Future<Response<List<Category>>> getCategories() async =>

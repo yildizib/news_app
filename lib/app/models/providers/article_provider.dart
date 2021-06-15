@@ -1,12 +1,13 @@
 import 'package:get/get.dart';
 
 import '../article_model.dart';
+import '../../configs/provider_config.dart';
 
 class ArticleProvider extends GetConnect {
   @override
   void onInit() {
     httpClient.defaultDecoder = (map) => Article.fromJson(map);
-    httpClient.baseUrl = 'YOUR-API-URL';
+    httpClient.baseUrl = ProviderConfig.apiUrl;
   }
 
   Future<Response<Article>> getArticle(int id) async =>

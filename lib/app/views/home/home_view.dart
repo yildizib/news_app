@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:news_app/app/controllers/home_controller.dart';
+import 'package:news_app/app/views/home/components/home_body.dart';
 import 'package:news_app/app/views/home/components/home_bottom_nav_bar.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -15,7 +16,7 @@ class HomeView extends GetView<HomeController> {
       bottomNavigationBar: HomeBottomNavBar(),
       body: Container(
         child: Center(
-          child: Text("Center"),
+          child: HomeBody(),
         ),
       ),
     );
